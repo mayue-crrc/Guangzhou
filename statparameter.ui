@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StatParameter</class>
+ <widget class="QWidget" name="StatParameter">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel
+{
+	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 18px, &quot;微软雅黑&quot;;
+}
+
+QWidget
+{
+	background-color: black;
+}
+
+QPushButton
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: black;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}</string>
+  </property>
+  <widget class="QPushButton" name="btnSiv">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>60</y>
+     <width>80</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SIV</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnStep">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>300</y>
+     <width>80</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>其他</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnUp">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>360</y>
+     <width>80</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	font: 25px, &quot;微软雅黑&quot;;
+    color: black;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:disabled
+{
+	font: 25px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:pressed
+{
+	font: 25px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(0, 0, 255); 
+	border:2px solid white; 
+	border-left-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, 
+                        stop: 0 gray, stop: 1 black); 			border-top-color: qlineargradient(x1: 0, y1: 0, x2: 0, 										y2: 1, stop: 0 gray, stop: 1 black);
+  border-right-color: white; border-bottom-color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>▲</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnDown">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>420</y>
+     <width>80</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	font: 25px, &quot;微软雅黑&quot;;
+    color: black;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:disabled
+{
+	font: 25px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:pressed
+{
+	font: 25px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(0, 0, 255); 
+	border:2px solid white; 
+	border-left-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, 
+                        stop: 0 gray, stop: 1 black); 			border-top-color: qlineargradient(x1: 0, y1: 0, x2: 0, 										y2: 1, stop: 0 gray, stop: 1 black);
+  border-right-color: white; border-bottom-color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>▼</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnBack">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>509</y>
+     <width>80</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: black;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:disabled
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:pressed
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(0, 0, 255); 
+	border:2px solid white; 
+	border-left-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, 
+                        stop: 0 gray, stop: 1 black); 			border-top-color: qlineargradient(x1: 0, y1: 0, x2: 0, 										y2: 1, stop: 0 gray, stop: 1 black);
+  border-right-color: white; border-bottom-color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnBcu">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>180</y>
+     <width>80</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BCU</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnTcu">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>120</y>
+     <width>80</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TCU</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCharging">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>240</y>
+     <width>80</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>,微软雅黑</family>
+     <pointsize>-1</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>充电机</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>540</y>
+     <width>66</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>,微软雅黑</family>
+     <pointsize>-1</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	border: 0px;</string>
+   </property>
+   <property name="text">
+    <string>1 / 1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>10</y>
+     <width>101</width>
+     <height>581</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>,微软雅黑</family>
+     <pointsize>-1</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>label_2</zorder>
+  <zorder>btnSiv</zorder>
+  <zorder>btnStep</zorder>
+  <zorder>btnUp</zorder>
+  <zorder>btnDown</zorder>
+  <zorder>btnBack</zorder>
+  <zorder>btnBcu</zorder>
+  <zorder>btnTcu</zorder>
+  <zorder>btnCharging</zorder>
+  <zorder>label</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

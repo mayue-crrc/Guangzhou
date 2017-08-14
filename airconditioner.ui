@@ -1,0 +1,1992 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AirConditioner</class>
+ <widget class="QWidget" name="AirConditioner">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel
+{
+	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 18px, &quot;微软雅黑&quot;;
+}
+
+QWidget
+{
+	background-color: black;
+}
+
+QPushButton
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: black;
+	background-color: rgb(113, 113, 198);
+	border:1px solid white;
+}</string>
+  </property>
+  <widget class="QLabel" name="lblIndoorTemperatureA1">
+   <property name="geometry">
+    <rect>
+     <x>177</x>
+     <y>102</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_61">
+   <property name="geometry">
+    <rect>
+     <x>444</x>
+     <y>216</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblIndoorTemperatureD1">
+   <property name="geometry">
+    <rect>
+     <x>444</x>
+     <y>102</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblTargetTemperatureA1">
+   <property name="geometry">
+    <rect>
+     <x>177</x>
+     <y>178</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblTargetTemperatureC1">
+   <property name="geometry">
+    <rect>
+     <x>355</x>
+     <y>178</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblOutdoorTemperatureD2">
+   <property name="geometry">
+    <rect>
+     <x>533</x>
+     <y>140</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_31">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>216</y>
+     <width>171</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>空调状态</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblTargetTemperatureA2">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>178</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblIndoorTemperatureA2">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>102</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblTargetTemperatureB2">
+   <property name="geometry">
+    <rect>
+     <x>711</x>
+     <y>178</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_70">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>254</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_57">
+   <property name="geometry">
+    <rect>
+     <x>177</x>
+     <y>216</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblOutdoorTemperatureD1">
+   <property name="geometry">
+    <rect>
+     <x>444</x>
+     <y>140</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_20">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>102</y>
+     <width>171</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>室内温度</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblIndoorTemperatureC1">
+   <property name="geometry">
+    <rect>
+     <x>355</x>
+     <y>102</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblOutdoorTemperatureA1">
+   <property name="geometry">
+    <rect>
+     <x>177</x>
+     <y>140</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblOutdoorTemperatureC2">
+   <property name="geometry">
+    <rect>
+     <x>622</x>
+     <y>140</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblOutdoorTemperatureB2">
+   <property name="geometry">
+    <rect>
+     <x>711</x>
+     <y>140</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblTargetTemperatureD1">
+   <property name="geometry">
+    <rect>
+     <x>444</x>
+     <y>178</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_62">
+   <property name="geometry">
+    <rect>
+     <x>533</x>
+     <y>216</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_63">
+   <property name="geometry">
+    <rect>
+     <x>711</x>
+     <y>216</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_32">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>254</y>
+     <width>171</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>空调压缩机状态</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblIndoorTemperatureB1">
+   <property name="geometry">
+    <rect>
+     <x>266</x>
+     <y>102</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_64">
+   <property name="geometry">
+    <rect>
+     <x>177</x>
+     <y>254</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblOutdoorTemperatureB1">
+   <property name="geometry">
+    <rect>
+     <x>266</x>
+     <y>140</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_65">
+   <property name="geometry">
+    <rect>
+     <x>711</x>
+     <y>254</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblIndoorTemperatureC2">
+   <property name="geometry">
+    <rect>
+     <x>622</x>
+     <y>102</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_60">
+   <property name="geometry">
+    <rect>
+     <x>622</x>
+     <y>216</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_67">
+   <property name="geometry">
+    <rect>
+     <x>355</x>
+     <y>254</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblTargetTemperatureD2">
+   <property name="geometry">
+    <rect>
+     <x>533</x>
+     <y>178</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_69">
+   <property name="geometry">
+    <rect>
+     <x>533</x>
+     <y>254</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblOutdoorTemperatureA2">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>140</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_56">
+   <property name="geometry">
+    <rect>
+     <x>355</x>
+     <y>216</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblIndoorTemperatureD2">
+   <property name="geometry">
+    <rect>
+     <x>533</x>
+     <y>102</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblIndoorTemperatureB2">
+   <property name="geometry">
+    <rect>
+     <x>711</x>
+     <y>102</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblTargetTemperatureC2">
+   <property name="geometry">
+    <rect>
+     <x>622</x>
+     <y>178</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_30">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>178</y>
+     <width>171</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>空调目标温度</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_71">
+   <property name="geometry">
+    <rect>
+     <x>444</x>
+     <y>254</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_68">
+   <property name="geometry">
+    <rect>
+     <x>622</x>
+     <y>254</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblTargetTemperatureB1">
+   <property name="geometry">
+    <rect>
+     <x>266</x>
+     <y>178</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_58">
+   <property name="geometry">
+    <rect>
+     <x>266</x>
+     <y>216</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_59">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>216</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblOutdoorTemperatureC1">
+   <property name="geometry">
+    <rect>
+     <x>355</x>
+     <y>140</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_29">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>140</y>
+     <width>171</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>室外温度</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_66">
+   <property name="geometry">
+    <rect>
+     <x>266</x>
+     <y>254</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor1A1">
+   <property name="geometry">
+    <rect>
+     <x>183</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor2A1">
+   <property name="geometry">
+    <rect>
+     <x>203</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor3A1">
+   <property name="geometry">
+    <rect>
+     <x>223</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor4A1">
+   <property name="geometry">
+    <rect>
+     <x>243</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor1B1">
+   <property name="geometry">
+    <rect>
+     <x>272</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor4B1">
+   <property name="geometry">
+    <rect>
+     <x>332</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor3B1">
+   <property name="geometry">
+    <rect>
+     <x>312</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor2B1">
+   <property name="geometry">
+    <rect>
+     <x>292</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor1C1">
+   <property name="geometry">
+    <rect>
+     <x>361</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor4C1">
+   <property name="geometry">
+    <rect>
+     <x>421</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor3C1">
+   <property name="geometry">
+    <rect>
+     <x>401</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor2C1">
+   <property name="geometry">
+    <rect>
+     <x>381</x>
+     <y>265</y>
+     <width>21</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor1D1">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor4D1">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor3D1">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor2D1">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor4D2">
+   <property name="geometry">
+    <rect>
+     <x>539</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor1D2">
+   <property name="geometry">
+    <rect>
+     <x>599</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor2D2">
+   <property name="geometry">
+    <rect>
+     <x>579</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor3D2">
+   <property name="geometry">
+    <rect>
+     <x>559</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor4B2">
+   <property name="geometry">
+    <rect>
+     <x>716</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor3B2">
+   <property name="geometry">
+    <rect>
+     <x>736</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor1B2">
+   <property name="geometry">
+    <rect>
+     <x>776</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor2B2">
+   <property name="geometry">
+    <rect>
+     <x>756</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor4C2">
+   <property name="geometry">
+    <rect>
+     <x>628</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor3C2">
+   <property name="geometry">
+    <rect>
+     <x>648</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor1C2">
+   <property name="geometry">
+    <rect>
+     <x>688</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor2C2">
+   <property name="geometry">
+    <rect>
+     <x>668</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor4A2">
+   <property name="geometry">
+    <rect>
+     <x>806</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor3A2">
+   <property name="geometry">
+    <rect>
+     <x>826</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor1A2">
+   <property name="geometry">
+    <rect>
+     <x>866</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCompressor2A2">
+   <property name="geometry">
+    <rect>
+     <x>846</x>
+     <y>265</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+color: black;
+font: 16px, &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAirconditionerA1">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>221</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/airConditionerRun.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAirconditionerB1">
+   <property name="geometry">
+    <rect>
+     <x>296</x>
+     <y>221</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/airConditionerRun.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAirconditionerC1">
+   <property name="geometry">
+    <rect>
+     <x>386</x>
+     <y>221</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/airConditionerRun.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAirconditionerD1">
+   <property name="geometry">
+    <rect>
+     <x>476</x>
+     <y>221</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/airConditionerRun.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAirconditionerD2">
+   <property name="geometry">
+    <rect>
+     <x>566</x>
+     <y>221</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/airConditionerRun.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAirconditionerC2">
+   <property name="geometry">
+    <rect>
+     <x>654</x>
+     <y>221</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/airConditionerRun.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAirconditionerB2">
+   <property name="geometry">
+    <rect>
+     <x>743</x>
+     <y>221</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/airConditionerRun.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAirconditionerA2">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>221</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/airConditionerRun.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnTemperatureSet">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>40</y>
+     <width>71</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>温度
+设定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnModeSet">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>120</y>
+     <width>71</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>模式
+设定</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_106">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>340</y>
+     <width>883</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnA001">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>360</y>
+     <width>85</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>A1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnB001">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>360</y>
+     <width>85</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>B1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnC001">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>360</y>
+     <width>85</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>C1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnD001">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>360</y>
+     <width>85</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>D1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnD002">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>360</y>
+     <width>85</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>D2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnC002">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>360</y>
+     <width>85</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>C2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnB002">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>360</y>
+     <width>85</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>B2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnA002">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>360</y>
+     <width>85</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>A2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAll">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>360</y>
+     <width>85</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>整车</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSetting">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>510</y>
+     <width>85</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color:black;
+	border:1px solid white;
+}</string>
+   </property>
+   <property name="text">
+    <string>设定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnTemperatureUp">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>440</y>
+     <width>85</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	font: 25px, &quot;微软雅黑&quot;;
+    color: black;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:pressed
+{
+	font: 25px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(0, 0, 255); 
+	border:2px solid white; 
+	border-left-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, 
+                        stop: 0 gray, stop: 1 black); 			border-top-color: qlineargradient(x1: 0, y1: 0, x2: 0, 										y2: 1, stop: 0 gray, stop: 1 black);
+  border-right-color: white; border-bottom-color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>▲</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnTemperatureDown">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>440</y>
+     <width>85</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	font: 25px, &quot;微软雅黑&quot;;
+    color: black;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:pressed
+{
+	font: 25px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(0, 0, 255); 
+	border:2px solid white; 
+	border-left-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, 
+                        stop: 0 gray, stop: 1 black); 			border-top-color: qlineargradient(x1: 0, y1: 0, x2: 0, 										y2: 1, stop: 0 gray, stop: 1 black);
+  border-right-color: white; border-bottom-color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>▼</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblSettedTemperature">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>440</y>
+     <width>85</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 35px &quot;Digital-7&quot;;</string>
+   </property>
+   <property name="text">
+    <string>23</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAutoCool">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>440</y>
+     <width>85</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>自动冷</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnManualCool">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>440</y>
+     <width>85</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>手动冷</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnExitPreCool">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>510</y>
+     <width>85</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>退出预冷</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnEmergency">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>440</y>
+     <width>85</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>紧急通风</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_107">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>0</y>
+     <width>2</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 0px;
+background-color: white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAuto">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>440</y>
+     <width>85</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>全自动</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnFireMode">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>510</y>
+     <width>85</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>火灾模式</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnVentilate">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>440</y>
+     <width>85</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>通风</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SetLight</class>
+ <widget class="QWidget" name="SetLight">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel
+{
+	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 18px, &quot;微软雅黑&quot;;
+}
+
+QWidget
+{
+	background-color: black;
+}
+
+QPushButton
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: black;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:disabled
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}</string>
+  </property>
+  <widget class="QLabel" name="label_106">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>70</y>
+     <width>561</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_107">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>370</y>
+     <width>561</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>50</y>
+     <width>131</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: black;
+border: 0px;
+color: white;</string>
+   </property>
+   <property name="text">
+    <string>亮度调节</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>350</y>
+     <width>131</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: black;
+border: 0px;
+color: white;</string>
+   </property>
+   <property name="text">
+    <string>声音调节</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnManual">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>210</y>
+     <width>90</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>手动调节</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAuto">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>210</y>
+     <width>90</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>自动调节</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnLeft">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>110</y>
+     <width>51</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	font: 22px, &quot;微软雅黑&quot;;
+    color: black;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:disabled
+{
+	font: 22px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:pressed
+{
+	font: 22px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(0, 0, 255); 
+	border:2px solid white; 
+	border-left-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, 
+                        stop: 0 gray, stop: 1 black); 			border-top-color: qlineargradient(x1: 0, y1: 0, x2: 0, 										y2: 1, stop: 0 gray, stop: 1 black);
+  border-right-color: white; border-bottom-color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>◀</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblLevel0">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>110</y>
+     <width>41</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblLevel1">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>110</y>
+     <width>41</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblLevel2">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>110</y>
+     <width>41</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblLevel3">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>110</y>
+     <width>41</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblLevel4">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>110</y>
+     <width>41</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRight">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>110</y>
+     <width>51</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	font: 22px, &quot;微软雅黑&quot;;
+    color: black;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:disabled
+{
+	font: 22px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:pressed
+{
+	font: 22px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(0, 0, 255); 
+	border:2px solid white; 
+	border-left-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, 
+                        stop: 0 gray, stop: 1 black); 			border-top-color: qlineargradient(x1: 0, y1: 0, x2: 0, 										y2: 1, stop: 0 gray, stop: 1 black);
+  border-right-color: white; border-bottom-color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>▶</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnLow">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>410</y>
+     <width>90</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>低</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnMedium">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>410</y>
+     <width>90</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>中</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnHigh">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>410</y>
+     <width>90</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>高</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

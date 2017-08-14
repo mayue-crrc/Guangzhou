@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SivTest</class>
+ <widget class="QWidget" name="SivTest">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel
+{
+	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 18px, &quot;微软雅黑&quot;;
+}
+
+QWidget
+{
+	background-color: black;
+}
+
+QPushButton
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: black;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}</string>
+  </property>
+  <widget class="QPushButton" name="btnSivCutoutA2">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>140</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>SIV切除(A2车)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSivCutoutA1">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>60</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>SIV切除(A1车)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSivCutoutC2">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>140</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>SIV切除(C2车)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSivCutoutC1">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>60</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>SIV切除(C1车)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnBack">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>520</y>
+     <width>85</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: black;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:disabled
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:pressed
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(0, 0, 255); 
+	border:2px solid white; 
+	border-left-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, 
+                        stop: 0 gray, stop: 1 black); 			border-top-color: qlineargradient(x1: 0, y1: 0, x2: 0, 										y2: 1, stop: 0 gray, stop: 1 black);
+  border-right-color: white; border-bottom-color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblTips">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>350</y>
+     <width>883</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+color: rgb(0, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string> 在司机室占有的条件下，单击按钮进行测试。
+按钮按下表示激活测试，按键弹起表示取消测试。</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>370</y>
+     <width>60</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: yellow;
+border: 0px;
+color: black;
+border-radius: 5px;</string>
+   </property>
+   <property name="text">
+    <string>操作
+提示</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

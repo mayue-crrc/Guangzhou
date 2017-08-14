@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BrakeTestPage</class>
+ <widget class="QWidget" name="BrakeTestPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel
+{
+	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 18px, &quot;微软雅黑&quot;;
+}
+
+QWidget
+{
+	background-color: black;
+}
+
+QPushButton
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: black;
+	background-color: rgb(113, 113, 198);
+	border:1px solid white;
+}</string>
+  </property>
+  <widget class="QPushButton" name="btnBack">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>490</y>
+     <width>90</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: black;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:disabled
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:pressed
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(0, 0, 255); 
+	border:2px solid white; 
+	border-left-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, 
+                        stop: 0 gray, stop: 1 black); 			border-top-color: qlineargradient(x1: 0, y1: 0, x2: 0, 										y2: 1, stop: 0 gray, stop: 1 black);
+  border-right-color: white; border-bottom-color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblBogie2ResultD2">
+   <property name="geometry">
+    <rect>
+     <x>591</x>
+     <y>224</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblOutdoorTemperatureC1">
+   <property name="geometry">
+    <rect>
+     <x>413</x>
+     <y>72</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	color: black;
+	background-color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 18px, &quot;微软雅黑&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>C1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblBogie2ResultA2">
+   <property name="geometry">
+    <rect>
+     <x>858</x>
+     <y>224</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblOutdoorTemperatureB2">
+   <property name="geometry">
+    <rect>
+     <x>769</x>
+     <y>72</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	color: black;
+	background-color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 18px, &quot;微软雅黑&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>B2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblBogie2ResultC2">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>224</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblBogie1ResultD1">
+   <property name="geometry">
+    <rect>
+     <x>502</x>
+     <y>186</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblOutdoorTemperatureD1">
+   <property name="geometry">
+    <rect>
+     <x>502</x>
+     <y>72</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	color: black;
+	background-color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 18px, &quot;微软雅黑&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>D1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_29">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>72</y>
+     <width>171</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>编号</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_30">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>148</y>
+     <width>171</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>自检准备</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblOutdoorTemperatureC2">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>72</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	color: black;
+	background-color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 18px, &quot;微软雅黑&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>C2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblBogie1ResultB2">
+   <property name="geometry">
+    <rect>
+     <x>769</x>
+     <y>186</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblBogie1ResultD2">
+   <property name="geometry">
+    <rect>
+     <x>591</x>
+     <y>186</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblOutdoorTemperatureA2">
+   <property name="geometry">
+    <rect>
+     <x>858</x>
+     <y>72</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	color: black;
+	background-color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 18px, &quot;微软雅黑&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>A2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblBogie2ResultC1">
+   <property name="geometry">
+    <rect>
+     <x>413</x>
+     <y>224</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblBogie2ResultB2">
+   <property name="geometry">
+    <rect>
+     <x>769</x>
+     <y>224</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblBogie2ResultB1">
+   <property name="geometry">
+    <rect>
+     <x>324</x>
+     <y>224</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblBogie1ResultA1">
+   <property name="geometry">
+    <rect>
+     <x>235</x>
+     <y>186</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblBogie1ResultC1">
+   <property name="geometry">
+    <rect>
+     <x>413</x>
+     <y>186</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCheckReadyA1">
+   <property name="geometry">
+    <rect>
+     <x>235</x>
+     <y>148</y>
+     <width>358</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCheckReadyA2">
+   <property name="geometry">
+    <rect>
+     <x>591</x>
+     <y>148</y>
+     <width>358</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblBogie1ResultA2">
+   <property name="geometry">
+    <rect>
+     <x>858</x>
+     <y>186</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblBogie2ResultA1">
+   <property name="geometry">
+    <rect>
+     <x>235</x>
+     <y>224</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblBogie2ResultD1">
+   <property name="geometry">
+    <rect>
+     <x>502</x>
+     <y>224</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblBogie1ResultB1">
+   <property name="geometry">
+    <rect>
+     <x>324</x>
+     <y>186</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblOutdoorTemperatureD2">
+   <property name="geometry">
+    <rect>
+     <x>591</x>
+     <y>72</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	color: black;
+	background-color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 18px, &quot;微软雅黑&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>D2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblOutdoorTemperatureA1">
+   <property name="geometry">
+    <rect>
+     <x>235</x>
+     <y>72</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	color: black;
+	background-color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 18px, &quot;微软雅黑&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>A1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblOutdoorTemperatureB1">
+   <property name="geometry">
+    <rect>
+     <x>324</x>
+     <y>72</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	color: black;
+	background-color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 18px, &quot;微软雅黑&quot;;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>B1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_32">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>224</y>
+     <width>171</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>转向架2自检结果</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblBogie1ResultC2">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>186</y>
+     <width>91</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_31">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>186</y>
+     <width>171</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>转向架1自检结果</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCheck">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>490</y>
+     <width>90</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: black;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:disabled
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}</string>
+   </property>
+   <property name="text">
+    <string>启动自检</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblTips">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>330</y>
+     <width>883</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+color: rgb(0, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string> 在自检准备信号是绿色且司机室占有的条件下，单击启动自检按钮，待自检完成后，
+通过上表格中的转向架1和2自检结果栏目查看自检结果。</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_35">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>110</y>
+     <width>171</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>未自检时间</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblUncheckTimeA1">
+   <property name="geometry">
+    <rect>
+     <x>235</x>
+     <y>110</y>
+     <width>358</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblUncheckTimeA2">
+   <property name="geometry">
+    <rect>
+     <x>591</x>
+     <y>110</y>
+     <width>358</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>38</x>
+     <y>355</y>
+     <width>60</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: yellow;
+border: 0px;
+color: black;
+border-radius: 5px;</string>
+   </property>
+   <property name="text">
+    <string>操作
+提示</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

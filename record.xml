@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record>
+	<configure>
+		<time>30</time>
+		<mileage>1000</mileage>
+	</configure>
+	
+	<time>
+		<item id="1">
+		<date>2017-03-01</date>
+		<mileage>1</mileage>
+		<compressorNo1>2</compressorNo1>
+		<compressorNo2>3</compressorNo2>
+		<total>4</total>
+		<auxiliary>5</auxiliary>
+		<traction>6</traction>
+		<resistor>7</resistor>
+		<regenerate>8</regenerate>
+		</item>
+		
+		<item id="2">
+		<date>2017-03-02</date>
+		<mileage>1</mileage>
+		<compressorNo1>2</compressorNo1>
+		<compressorNo2>3</compressorNo2>
+		<total>4</total>
+		<auxiliary>5</auxiliary>
+		<traction>6</traction>
+		<resistor>7</resistor>
+		<regenerate>8</regenerate>
+		</item>
+		
+		<item id="3">
+		<date>2017-03-03</date>
+		<mileage>1</mileage>
+		<compressorNo1>2</compressorNo1>
+		<compressorNo2>3</compressorNo2>
+		<total>4</total>
+		<auxiliary>5</auxiliary>
+		<traction>6</traction>
+		<resistor>7</resistor>
+		<regenerate>8</regenerate>
+		</item>
+		
+		<item id="4">
+		<date>2017-03-04</date>
+		<mileage>1</mileage>
+		<compressorNo1>2</compressorNo1>
+		<compressorNo2>3</compressorNo2>
+		<total>4</total>
+		<auxiliary>5</auxiliary>
+		<traction>6</traction>
+		<resistor>7</resistor>
+		<regenerate>8</regenerate>
+		</item>
+		
+		<item id="5">
+		<date>2017-03-05</date>
+		<mileage>1</mileage>
+		<compressorNo1>2</compressorNo1>
+		<compressorNo2>3</compressorNo2>
+		<total>4</total>
+		<auxiliary>5</auxiliary>
+		<traction>6</traction>
+		<resistor>7</resistor>
+		<regenerate>8</regenerate>
+		</item>
+	</time>
+	
+	<mileage>
+		<item id="1">
+		<compressorNo1>2</compressorNo1>
+		<compressorNo2>3</compressorNo2>
+		<total>4</total>
+		<auxiliary>5</auxiliary>
+		<traction>6</traction>
+		<resistor>7</resistor>
+		<regenerate>8</regenerate>
+		</item>
+		
+		<item id="2">
+		<compressorNo1>2</compressorNo1>
+		<compressorNo2>3</compressorNo2>
+		<total>4</total>
+		<auxiliary>5</auxiliary>
+		<traction>6</traction>
+		<resistor>7</resistor>
+		<regenerate>8</regenerate>
+		</item>
+		
+		<item id="3">
+		<compressorNo1>2</compressorNo1>
+		<compressorNo2>3</compressorNo2>
+		<total>4</total>
+		<auxiliary>5</auxiliary>
+		<traction>6</traction>
+		<resistor>7</resistor>
+		<regenerate>8</regenerate>
+		</item>
+	</mileage>
+</record>

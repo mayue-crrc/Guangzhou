@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Navigator</class>
+ <widget class="QWidget" name="Navigator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>68</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color: black;
+}
+
+QPushButton
+{
+	font: 20px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(113, 113, 198);
+    border:2px solid white; 
+	border-right-color: rgb(113, 113, 198);
+    border-bottom-color: rgb(113, 113, 198);
+}</string>
+  </property>
+  <widget class="QPushButton" name="btnVehicleState">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>18</y>
+     <width>100</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>车辆状态</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnVehicleParameter">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>18</y>
+     <width>100</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>车辆参数</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAirConditioner">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>18</y>
+     <width>100</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>空调</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnBypass">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>18</y>
+     <width>100</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>旁路信息</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCase">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>18</y>
+     <width>100</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>事件</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnFireAlarm">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>18</y>
+     <width>100</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>烟火报警</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnTroubleShooting">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>18</y>
+     <width>100</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>检修</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	background-color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnLogo">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>2</y>
+     <width>51</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-width: 0px;
+border-image: url(:/images/logo.png);
+background-color: black;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

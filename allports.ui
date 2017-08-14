@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AllPorts</class>
+ <widget class="QWidget" name="AllPorts">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel
+{
+	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 18px, &quot;微软雅黑&quot;;
+}
+
+QWidget
+{
+	background-color: black;
+}
+
+QPushButton
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: black;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:disabled
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}</string>
+  </property>
+  <widget class="QPushButton" name="btnHmi">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>30</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>HMI</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCcuA">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>70</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>CCU A</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnErm">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>150</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>ERM</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRiom">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>190</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>RIOM</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnBcuA">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>230</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>GWV A</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnTcu">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>310</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>VVVF</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSiv">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>350</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>SIV</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnEdcuA">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>390</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>EDCU A</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnEdcuB">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>430</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>EDCU B</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnFau">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>470</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>FAMU</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnPa">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>510</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>ASCU</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnHvac">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>550</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>ACCP</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnBack">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>710</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: black;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:disabled
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:pressed
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(0, 0, 255); 
+	border:2px solid white; 
+	border-left-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, 
+                        stop: 0 gray, stop: 1 black); 			border-top-color: qlineargradient(x1: 0, y1: 0, x2: 0, 										y2: 1, stop: 0 gray, stop: 1 black);
+  border-right-color: white; border-bottom-color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnBcuB">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>270</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>GWV B</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAtc">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>590</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>ATCC</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnDcdc">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>630</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>BCG</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnTds">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>670</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>TDS</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCcuB">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>110</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>CCU B</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

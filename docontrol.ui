@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DoControl</class>
+ <widget class="QWidget" name="DoControl">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>880</width>
+    <height>250</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color: black;
+}
+
+QPushButton
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: black;
+	background-color: rgb(113, 113, 198);
+	border:1px solid white;
+	border-radius: 5px;
+}
+
+QLabel
+{
+	font: 14px, &quot;微软雅黑&quot;;
+	color: black;
+	border:2px solid gray;
+	background-color: qlineargradient(x1: 0, y1 :0, x2: 1, y2: 1,
+				stop:0 white, stop: 0.618 rgb(213, 213, 238), stop: 1 white);
+}</string>
+  </property>
+  <widget class="QLabel" name="lblDo12State">
+   <property name="geometry">
+    <rect>
+     <x>837</x>
+     <y>127</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo3State">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>54</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo9Name">
+   <property name="geometry">
+    <rect>
+     <x>75</x>
+     <y>119</y>
+     <width>200</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DO9</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblTitle">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>47</y>
+     <width>60</width>
+     <height>146</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DO</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo12Name">
+   <property name="geometry">
+    <rect>
+     <x>669</x>
+     <y>119</y>
+     <width>200</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DO12</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo2State">
+   <property name="geometry">
+    <rect>
+     <x>442</x>
+     <y>54</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo2Name">
+   <property name="geometry">
+    <rect>
+     <x>273</x>
+     <y>47</y>
+     <width>200</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DO2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo14Name">
+   <property name="geometry">
+    <rect>
+     <x>273</x>
+     <y>155</y>
+     <width>200</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DO14</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo13State">
+   <property name="geometry">
+    <rect>
+     <x>245</x>
+     <y>162</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo8Name">
+   <property name="geometry">
+    <rect>
+     <x>669</x>
+     <y>83</y>
+     <width>200</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DO8</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo4Name">
+   <property name="geometry">
+    <rect>
+     <x>669</x>
+     <y>47</y>
+     <width>200</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DO4</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo9State">
+   <property name="geometry">
+    <rect>
+     <x>245</x>
+     <y>127</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo4State">
+   <property name="geometry">
+    <rect>
+     <x>837</x>
+     <y>54</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo5State">
+   <property name="geometry">
+    <rect>
+     <x>245</x>
+     <y>90</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo10State">
+   <property name="geometry">
+    <rect>
+     <x>442</x>
+     <y>127</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo6State">
+   <property name="geometry">
+    <rect>
+     <x>442</x>
+     <y>90</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo11Name">
+   <property name="geometry">
+    <rect>
+     <x>471</x>
+     <y>119</y>
+     <width>200</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DO11</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo16State">
+   <property name="geometry">
+    <rect>
+     <x>837</x>
+     <y>162</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo7Name">
+   <property name="geometry">
+    <rect>
+     <x>471</x>
+     <y>83</y>
+     <width>200</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DO7</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo11State">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>127</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo13Name">
+   <property name="geometry">
+    <rect>
+     <x>75</x>
+     <y>155</y>
+     <width>200</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DO13</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo10Name">
+   <property name="geometry">
+    <rect>
+     <x>273</x>
+     <y>119</y>
+     <width>200</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DO10</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo8State">
+   <property name="geometry">
+    <rect>
+     <x>837</x>
+     <y>90</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo15Name">
+   <property name="geometry">
+    <rect>
+     <x>471</x>
+     <y>155</y>
+     <width>200</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DO15</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo5Name">
+   <property name="geometry">
+    <rect>
+     <x>75</x>
+     <y>83</y>
+     <width>200</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DO5</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo14State">
+   <property name="geometry">
+    <rect>
+     <x>442</x>
+     <y>162</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo15State">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>162</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo3Name">
+   <property name="geometry">
+    <rect>
+     <x>471</x>
+     <y>47</y>
+     <width>200</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DO3</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo1State">
+   <property name="geometry">
+    <rect>
+     <x>245</x>
+     <y>54</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo1Name">
+   <property name="geometry">
+    <rect>
+     <x>75</x>
+     <y>47</y>
+     <width>200</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DO1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo6Name">
+   <property name="geometry">
+    <rect>
+     <x>273</x>
+     <y>83</y>
+     <width>200</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DO6</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo7State">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>90</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblDo16Name">
+   <property name="geometry">
+    <rect>
+     <x>669</x>
+     <y>155</y>
+     <width>200</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DO16</string>
+   </property>
+  </widget>
+  <zorder>lblDo16Name</zorder>
+  <zorder>lblDo12Name</zorder>
+  <zorder>lblDo4Name</zorder>
+  <zorder>lblDo8Name</zorder>
+  <zorder>lblDo7Name</zorder>
+  <zorder>lblDo3Name</zorder>
+  <zorder>lblDo11Name</zorder>
+  <zorder>lblDo15Name</zorder>
+  <zorder>lblDo10Name</zorder>
+  <zorder>lblDo14Name</zorder>
+  <zorder>lblDo6Name</zorder>
+  <zorder>lblDo2Name</zorder>
+  <zorder>lblDo13Name</zorder>
+  <zorder>lblDo9Name</zorder>
+  <zorder>lblDo5Name</zorder>
+  <zorder>lblDo1Name</zorder>
+  <zorder>lblDo12State</zorder>
+  <zorder>lblDo3State</zorder>
+  <zorder>lblTitle</zorder>
+  <zorder>lblDo2State</zorder>
+  <zorder>lblDo13State</zorder>
+  <zorder>lblDo9State</zorder>
+  <zorder>lblDo4State</zorder>
+  <zorder>lblDo5State</zorder>
+  <zorder>lblDo10State</zorder>
+  <zorder>lblDo6State</zorder>
+  <zorder>lblDo16State</zorder>
+  <zorder>lblDo11State</zorder>
+  <zorder>lblDo8State</zorder>
+  <zorder>lblDo14State</zorder>
+  <zorder>lblDo15State</zorder>
+  <zorder>lblDo1State</zorder>
+  <zorder>lblDo7State</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

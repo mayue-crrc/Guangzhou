@@ -1,0 +1,4282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NetCommunication</class>
+ <widget class="QWidget" name="NetCommunication">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel
+{
+	color: white;
+	border: 2px groove, gray;
+    border-color: 1px solid gray;
+	font: 18px, &quot;微软雅黑&quot;;
+}
+
+QWidget
+{
+	background-color: black;
+}
+
+QPushButton
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: black;
+	background-color: rgb(133, 133, 198);
+	border:1px solid white;
+}</string>
+  </property>
+  <widget class="QLabel" name="lblRptB1">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>138</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: rgb(0, 255, 0);
+border: 1px solid gray;
+</string>
+   </property>
+   <property name="text">
+    <string>RPT</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblRptC1">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>138</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: rgb(0, 255, 0);
+border: 1px solid gray;
+</string>
+   </property>
+   <property name="text">
+    <string>RPT</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblRptC2">
+   <property name="geometry">
+    <rect>
+     <x>635</x>
+     <y>138</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: rgb(0, 255, 0);
+border: 1px solid gray;
+</string>
+   </property>
+   <property name="text">
+    <string>RPT</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblRptB2">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>138</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: rgb(0, 255, 0);
+border: 1px solid gray;
+</string>
+   </property>
+   <property name="text">
+    <string>RPT</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hmiA1">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>347</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>HMI</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ccuA1">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>270</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>CCU</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ermA1">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>305</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>ERM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="riomA1">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>266</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>RIOM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hvacA1">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>186</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>ACCP</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="atcA1">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>427</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>ATCC</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="edcu2A1">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>387</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>EDCU2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="paA1">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>230</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>ASCU</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="bcuA1">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>467</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>GWV</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="fauA1">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>310</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>FAMU</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="sivA1">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>190</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>SIV</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="riomB1">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>186</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>RIOM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tcuB1">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>345</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>VVVF</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="sivC1">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>390</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>SIV</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="riomC1">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>186</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>RIOM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="riomD1">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>186</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>RIOM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="riomD2">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>186</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>RIOM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hvacD2">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>226</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>ACCP</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="edcu1D2">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>266</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>EDCU1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tcuD2">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>347</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>VVVF</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="bcuD2">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>390</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>GWV</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hvacB1">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>226</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>ACCP</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hvacC1">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>226</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>ACCP</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hvacD1">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>226</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>ACCP</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="edcu1B1">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>266</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>EDCU1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="edcu1C1">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>266</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>EDCU1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="edcu1D1">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>266</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>EDCU1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tcuC1">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>347</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>VVVF</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tcuD1">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>347</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>VVVF</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="bcuD1">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>390</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>GWV</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hvacC2">
+   <property name="geometry">
+    <rect>
+     <x>635</x>
+     <y>226</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>ACCP</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="sivC2">
+   <property name="geometry">
+    <rect>
+     <x>635</x>
+     <y>390</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>SIV</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tcuC2">
+   <property name="geometry">
+    <rect>
+     <x>635</x>
+     <y>347</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>VVVF</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="riomC2">
+   <property name="geometry">
+    <rect>
+     <x>635</x>
+     <y>186</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>RIOM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tcuB2">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>347</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>VVVF</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="riomB2">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>186</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>RIOM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hvacB2">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>226</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>ACCP</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="fauA2">
+   <property name="geometry">
+    <rect>
+     <x>815</x>
+     <y>310</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>FAMU</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="sivA2">
+   <property name="geometry">
+    <rect>
+     <x>815</x>
+     <y>190</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>SIV</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="bcuA2">
+   <property name="geometry">
+    <rect>
+     <x>895</x>
+     <y>427</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>GWV</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ermA2">
+   <property name="geometry">
+    <rect>
+     <x>895</x>
+     <y>305</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>ERM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="paA2">
+   <property name="geometry">
+    <rect>
+     <x>815</x>
+     <y>230</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>ASCU</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="riomA2">
+   <property name="geometry">
+    <rect>
+     <x>895</x>
+     <y>266</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>RIOM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ccuA2">
+   <property name="geometry">
+    <rect>
+     <x>815</x>
+     <y>270</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>CCU</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hmiA2">
+   <property name="geometry">
+    <rect>
+     <x>895</x>
+     <y>347</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>HMI</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="edcu1C2">
+   <property name="geometry">
+    <rect>
+     <x>635</x>
+     <y>266</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>EDCU1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="edcu1B2">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>266</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>EDCU1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="edcu2A2">
+   <property name="geometry">
+    <rect>
+     <x>895</x>
+     <y>387</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>EDCU2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hvacA2">
+   <property name="geometry">
+    <rect>
+     <x>895</x>
+     <y>186</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>ACCP</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_vertical1_1">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>110</y>
+     <width>2</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line1">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>110</y>
+     <width>503</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_vertical1_4">
+   <property name="geometry">
+    <rect>
+     <x>753</x>
+     <y>110</y>
+     <width>2</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_vertical1_3">
+   <property name="geometry">
+    <rect>
+     <x>655</x>
+     <y>110</y>
+     <width>2</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_vertical1_2">
+   <property name="geometry">
+    <rect>
+     <x>345</x>
+     <y>110</y>
+     <width>2</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: gray;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_L1_1">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>161</y>
+     <width>2</width>
+     <height>326</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_L1_2">
+   <property name="geometry">
+    <rect>
+     <x>295</x>
+     <y>160</y>
+     <width>2</width>
+     <height>202</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_L1_3">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>160</y>
+     <width>2</width>
+     <height>290</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_L1_4">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>205</y>
+     <width>2</width>
+     <height>245</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_R1_1">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>205</y>
+     <width>2</width>
+     <height>245</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>160</y>
+     <width>95</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_R1_2">
+   <property name="geometry">
+    <rect>
+     <x>615</x>
+     <y>162</y>
+     <width>2</width>
+     <height>289</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_R1_3">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>160</y>
+     <width>2</width>
+     <height>205</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_R1_4">
+   <property name="geometry">
+    <rect>
+     <x>875</x>
+     <y>160</y>
+     <width>2</width>
+     <height>287</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label2">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>160</y>
+     <width>97</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV1_1">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>205</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV1_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>245</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV1_3">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>285</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV1_4">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>325</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV1_5">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>365</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV1_6">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>405</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV1_7">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>445</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV1_8">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>485</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV4_1">
+   <property name="geometry">
+    <rect>
+     <x>875</x>
+     <y>205</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV4_2">
+   <property name="geometry">
+    <rect>
+     <x>875</x>
+     <y>245</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV4_3">
+   <property name="geometry">
+    <rect>
+     <x>875</x>
+     <y>285</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV4_4">
+   <property name="geometry">
+    <rect>
+     <x>875</x>
+     <y>325</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV4_5">
+   <property name="geometry">
+    <rect>
+     <x>875</x>
+     <y>365</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV4_6">
+   <property name="geometry">
+    <rect>
+     <x>875</x>
+     <y>405</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV4_7">
+   <property name="geometry">
+    <rect>
+     <x>875</x>
+     <y>445</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV2_1">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>205</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV2_2">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>245</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV2_3">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>285</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV2_4">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>360</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV3_1">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>205</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV3_2">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>245</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV3_3">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>285</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV3_4">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>325</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV3_1">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>205</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV3_2">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>245</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV3_3">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>285</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV3_4">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>325</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV3_5">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>365</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV4_1">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>205</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV4_2">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>245</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV4_3">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>285</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV4_4">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>325</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV4_5">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>365</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV2_1">
+   <property name="geometry">
+    <rect>
+     <x>615</x>
+     <y>205</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV2_2">
+   <property name="geometry">
+    <rect>
+     <x>615</x>
+     <y>245</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV2_3">
+   <property name="geometry">
+    <rect>
+     <x>615</x>
+     <y>285</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV2_4">
+   <property name="geometry">
+    <rect>
+     <x>615</x>
+     <y>325</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV2_5">
+   <property name="geometry">
+    <rect>
+     <x>615</x>
+     <y>365</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV1_1">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>205</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV1_2">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>245</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV1_3">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>285</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV1_4">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>325</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV1_5">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>365</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>450</y>
+     <width>92</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>450</y>
+     <width>97</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>145</y>
+     <width>105</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_L1_5">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>145</y>
+     <width>2</width>
+     <height>332</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV5_1">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>195</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV5_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>235</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV5_3">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>275</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV5_4">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>315</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV5_5">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>355</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV5_6">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>395</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV5_7">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>435</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV5_8">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>475</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_L1_6">
+   <property name="geometry">
+    <rect>
+     <x>285</x>
+     <y>150</y>
+     <width>2</width>
+     <height>202</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV6_1">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>195</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV6_2">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>235</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV6_3">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>275</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV6_4">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>350</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_L1_7">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>145</y>
+     <width>2</width>
+     <height>297</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV7_1">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>195</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV7_2">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>235</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV7_3">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>275</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV7_4">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>315</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV7_5">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>355</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_L1_8">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>195</y>
+     <width>2</width>
+     <height>245</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>440</y>
+     <width>92</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV8_1">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>195</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV8_2">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>235</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV8_3">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>275</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV8_4">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>315</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV8_5">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>355</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV5_9">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>200</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV1_9">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>210</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV5_10">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>240</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV5_11">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>280</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV1_10">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>250</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV1_11">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>290</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_R1_5">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>195</y>
+     <width>2</width>
+     <height>245</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_R1_6">
+   <property name="geometry">
+    <rect>
+     <x>625</x>
+     <y>147</y>
+     <width>2</width>
+     <height>293</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>440</y>
+     <width>97</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_R1_7">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>146</y>
+     <width>2</width>
+     <height>209</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_R1_8">
+   <property name="geometry">
+    <rect>
+     <x>885</x>
+     <y>145</y>
+     <width>2</width>
+     <height>290</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>145</y>
+     <width>105</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV7_1">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>195</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV7_2">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>235</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV7_3">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>275</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV7_4">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>315</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV5_1">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>195</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV5_2">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>235</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV5_3">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>275</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV5_4">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>315</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV5_5">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>355</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV6_1">
+   <property name="geometry">
+    <rect>
+     <x>625</x>
+     <y>195</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV6_2">
+   <property name="geometry">
+    <rect>
+     <x>625</x>
+     <y>235</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV6_3">
+   <property name="geometry">
+    <rect>
+     <x>625</x>
+     <y>275</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV6_4">
+   <property name="geometry">
+    <rect>
+     <x>625</x>
+     <y>315</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV6_5">
+   <property name="geometry">
+    <rect>
+     <x>625</x>
+     <y>355</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV8_1">
+   <property name="geometry">
+    <rect>
+     <x>885</x>
+     <y>195</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV8_2">
+   <property name="geometry">
+    <rect>
+     <x>885</x>
+     <y>235</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV8_3">
+   <property name="geometry">
+    <rect>
+     <x>885</x>
+     <y>275</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV8_4">
+   <property name="geometry">
+    <rect>
+     <x>885</x>
+     <y>315</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV8_5">
+   <property name="geometry">
+    <rect>
+     <x>885</x>
+     <y>355</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV8_6">
+   <property name="geometry">
+    <rect>
+     <x>885</x>
+     <y>395</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV8_7">
+   <property name="geometry">
+    <rect>
+     <x>885</x>
+     <y>435</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV4_9">
+   <property name="geometry">
+    <rect>
+     <x>865</x>
+     <y>210</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV4_10">
+   <property name="geometry">
+    <rect>
+     <x>865</x>
+     <y>250</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV4_11">
+   <property name="geometry">
+    <rect>
+     <x>865</x>
+     <y>290</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV8_9">
+   <property name="geometry">
+    <rect>
+     <x>865</x>
+     <y>200</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV8_10">
+   <property name="geometry">
+    <rect>
+     <x>865</x>
+     <y>240</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV8_11">
+   <property name="geometry">
+    <rect>
+     <x>865</x>
+     <y>280</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnBack">
+   <property name="geometry">
+    <rect>
+     <x>925</x>
+     <y>530</y>
+     <width>85</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: black;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:disabled
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(113, 113, 198);
+	border:2px solid white; 
+    border-right-color: rgb(113, 113, 198); 
+    border-bottom-color: rgb(113, 113, 198);
+}
+
+QPushButton:pressed
+{
+	font: 18px, &quot;微软雅黑&quot;;
+    color: white;
+	background-color: rgb(0, 0, 255); 
+	border:2px solid white; 
+	border-left-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, 
+                        stop: 0 gray, stop: 1 black); 			border-top-color: qlineargradient(x1: 0, y1: 0, x2: 0, 										y2: 1, stop: 0 gray, stop: 1 black);
+  border-right-color: white; border-bottom-color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="edcu1A1">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>350</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>EDCU1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="edcu1A2">
+   <property name="geometry">
+    <rect>
+     <x>815</x>
+     <y>350</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>EDCU1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV8_12">
+   <property name="geometry">
+    <rect>
+     <x>865</x>
+     <y>320</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV4_12">
+   <property name="geometry">
+    <rect>
+     <x>865</x>
+     <y>330</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV1_12">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>330</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV5_12">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>320</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="edcu2B1">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>305</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>EDCU2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV2_5">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>325</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV6_5">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>315</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="edcu2C1">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>307</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>EDCU2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="edcu2D1">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>307</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>EDCU2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="edcu2D2">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>307</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>EDCU2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="edcu2C2">
+   <property name="geometry">
+    <rect>
+     <x>635</x>
+     <y>307</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>EDCU2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="edcu2B2">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>307</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>EDCU2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV3_6">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>410</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV7_6">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>400</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV3_7">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>410</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV7_7">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>400</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV3_8">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>410</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV7_8">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>400</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV3_9">
+   <property name="geometry">
+    <rect>
+     <x>615</x>
+     <y>410</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV7_9">
+   <property name="geometry">
+    <rect>
+     <x>625</x>
+     <y>400</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV3_10">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>365</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV7_10">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>355</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="dcdcA1">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>226</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>BCG</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="dcdcA2">
+   <property name="geometry">
+    <rect>
+     <x>895</x>
+     <y>226</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>BCG</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV5_13">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>360</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV1_13">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>370</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV8_13">
+   <property name="geometry">
+    <rect>
+     <x>865</x>
+     <y>360</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV4_13">
+   <property name="geometry">
+    <rect>
+     <x>865</x>
+     <y>370</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV7_11">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>145</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV3_11">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>160</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV7_12">
+   <property name="geometry">
+    <rect>
+     <x>625</x>
+     <y>145</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV3_12">
+   <property name="geometry">
+    <rect>
+     <x>615</x>
+     <y>160</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV3_5">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>160</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineRV7_5">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>145</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV2_6">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>160</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLV6_6">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>150</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hmiA1_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>65</y>
+     <width>91</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: red;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>通讯故障</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hmiA1_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>25</y>
+     <width>91</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: rgb(0, 255, 0);
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>通讯正常</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblLcuA1">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>390</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>LCU</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblLcuLine1A1">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>400</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblLcuLine2A1">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>410</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblLcuA2">
+   <property name="geometry">
+    <rect>
+     <x>815</x>
+     <y>390</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px;
+color: rgb(0,0,0);
+background-color: gray;
+border: 1px solid gray;</string>
+   </property>
+   <property name="text">
+    <string>LCU</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblLcuLine2A2">
+   <property name="geometry">
+    <rect>
+     <x>865</x>
+     <y>410</y>
+     <width>10</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblLcuLine1A2">
+   <property name="geometry">
+    <rect>
+     <x>865</x>
+     <y>400</y>
+     <width>20</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+border: 0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
